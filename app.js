@@ -210,3 +210,12 @@ const filterArr=priceArr.filter((price,idx,priceArr)=>{
 
 console.log(priceArr);
 console.log(filterArr);
+
+
+// using => functions for shorter code and clean code 
+
+const newArr=[1,2,3,4,5];
+
+const filterNewArr=newArr.filter(p => p>2);
+
+console.log(filterNewArr);

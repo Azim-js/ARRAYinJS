@@ -158,3 +158,42 @@ const newAdjust=price1.map((price,idx,price1)=>{
 });
 
 console.log(newAdjust,price1);
+
+
+// sorting using sort()
+
+const arr=[10,9,8,7,6,5];
+
+// const sortedPrice= arr.sort();
+
+const sortedPrice=arr.sort((a,b)=>{
+    if(a>b){
+        return 1;
+    }
+    else if(a===b){
+        return 0;
+    }
+    else{
+        return -1;
+    }
+});
+
+console.log(sortedPrice);
+
+//sorting in reverse order
+
+const arr1=[1,2,3,4,5];
+
+const reversePrice=arr.sort((a,b)=>{
+    if(a>b){
+        return -1;
+    }
+    else if(a===b){
+        return 0;
+    }
+    else{
+        return 1;
+    }
+});
+
+console.log(reversePrice);

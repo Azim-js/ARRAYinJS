@@ -141,8 +141,20 @@ const tax=0.19;
 const taxAdjustedPrice=[];
 
 prices.forEach((price,idx,prices)=>{
-const priceObj={indx:idx,taxAdjustedprice:price*(1+tax)}
+const priceObj={indx:idx,taxAdjustedprice:price*(1+tax)};
 taxAdjustedPrice.push(priceObj);
-})
+});
 
 console.log(taxAdjustedPrice);
+
+// map() function to access the elements in an array for refrence as a object
+
+const price1=[1,2,3,4,5];
+const tax1=1.5;
+
+const newAdjust=price1.map((price,idx,price1)=>{
+    const priceObj={index:idx,taxprice:(1+tax)*price};
+    return priceObj;
+});
+
+console.log(newAdjust,price1);

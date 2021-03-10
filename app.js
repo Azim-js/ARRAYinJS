@@ -219,3 +219,10 @@ const newArr=[1,2,3,4,5];
 const filterNewArr=newArr.filter(p => p>2);
 
 console.log(filterNewArr);
+
+
+// using reduce() function for reducing code with 2 parameters
+
+const sum=newArr.reduce((preValue,curValue)=>preValue+curValue,0);
+
+console.log(sum);

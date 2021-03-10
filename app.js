@@ -197,3 +197,16 @@ const reversePrice=arr.sort((a,b)=>{
 });
 
 console.log(reversePrice);
+
+
+
+// using filter() 
+
+const priceArr=[6,7,8,5,10];
+
+const filterArr=priceArr.filter((price,idx,priceArr)=>{
+    return price>6;
+});
+
+console.log(priceArr);
+console.log(filterArr);

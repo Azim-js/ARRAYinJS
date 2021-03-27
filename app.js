@@ -242,3 +242,9 @@ console.log(sum1);
 const origArr=[{price:10.99},{price:5.99},{price:29.99}];
 const sumTwo=origArr.reduce((sumVal,curVal)=>sumVal+curVal,0);
 console.log(sumTwo);
+
+// CHANING EXAMPLE
+
+const origArray=[{price:10.99},{price:5.99},{price:29.99}];
+const sumThree=origArray.map(obj=>obj.price).reduce((sumVal,curVal)=>sumVal+curVal,0);
+console.log(sumThree);

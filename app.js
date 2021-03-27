@@ -226,3 +226,13 @@ console.log(filterNewArr);
 const sum=newArr.reduce((preValue,curValue)=>preValue+curValue,0);
 
 console.log(sum);
+
+// CHANING METHODS IN JAVASCRIPT(USING MAPING REDUCING AND FILTERING CONCEPT)
+
+const originalArray=[{price:10.99},{price:5.99},{price:29.99}];
+const transformedArray=originalArray.map(obj=>obj.price);
+
+const sum1=transformedArray.reduce((sumVal,curVal)=>{
+    sumVal+curVal
+},0);
+console.log(sum1);

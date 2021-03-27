@@ -236,3 +236,9 @@ const sum1=transformedArray.reduce((sumVal,curVal)=>{
     sumVal+curVal
 },0);
 console.log(sum1);
+
+// reduce()
+
+const origArr=[{price:10.99},{price:5.99},{price:29.99}];
+const sumTwo=origArr.reduce((sumVal,curVal)=>sumVal+curVal,0);
+console.log(sumTwo);

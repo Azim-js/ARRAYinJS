@@ -258,3 +258,11 @@ transArray[1]=+transArray[1];
 
 console.log(transArray);
 
+
+// .join() method used to convert Array elements to string
+
+const nameFragments=["Mohammed","Azim"];
+
+const nameString=nameFragments.join(" ");
+console.log(nameString);
+

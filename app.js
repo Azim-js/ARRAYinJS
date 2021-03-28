@@ -275,3 +275,10 @@ const copiedFrag=[...nameFrag]; //pulling each individual element and copying it
 nameFrag.unshift("Mr");
 
 console.log(nameFrag,copiedFrag);
+
+
+// ... spread oprator to pass array elements in an in built methods (which cannot be passed as array)
+
+const priceOne=[1,2,3,4,5,-1,-2,-3];
+
+console.log(Math.min(...priceOne));

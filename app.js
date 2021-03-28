@@ -303,3 +303,11 @@ personObj[0].age="21";
 console.log("issue",personObj);
 console.log("issue solved",copiedPersons);
 
+
+// Destructing Arrays
+
+const nameData=["Mohammed","Azim","Mr",21];
+
+const [firstName,lastName,...otherInfo]=nameData;
+
+console.log(firstName,lastName,otherInfo);

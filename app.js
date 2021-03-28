@@ -289,7 +289,17 @@ const personObj=[{name:'Azim',age:'18'},{name:"Ummar",age:"21"}];
 
 const copiedPerson=[...personObj];
 
-personObj[0].age="21"; // ISSUE the copied object copies the old refrence address 
+// personObj[0].age="21"; // ISSUE the copied object copies the old refrence address 
 
 console.log(personObj,copiedPerson);
+
+// ISSUE SOLVED using map() functions 
+
+
+// new object whit new addressing
+const copiedPersons=[personObj.map(person=>({name:person.name,age:person.age}))];
+personObj[0].age="21"; 
+
+console.log("issue",personObj);
+console.log("issue solved",copiedPersons);
 

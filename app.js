@@ -248,3 +248,13 @@ console.log(sumTwo);
 const origArray=[{price:10.99},{price:5.99},{price:29.99}];
 const sumThree=origArray.map(obj=>obj.price).reduce((sumVal,curVal)=>sumVal+curVal,0);
 console.log(sumThree);
+
+// .spilt() method used convert String Data to Array
+
+const data="newYork;2021;1030";
+
+const transArray=data.split(";");
+transArray[1]=+transArray[1];
+
+console.log(transArray);
+

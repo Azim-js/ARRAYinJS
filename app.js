@@ -282,3 +282,14 @@ console.log(nameFrag,copiedFrag);
 const priceOne=[1,2,3,4,5,-1,-2,-3];
 
 console.log(Math.min(...priceOne));
+
+// Spread opreator(...) for objects 
+
+const personObj=[{name:'Azim',age:'18'},{name:"Ummar",age:"21"}];
+
+const copiedPerson=[...personObj];
+
+personObj[0].age="21"; // ISSUE the copied object copies the old refrence address 
+
+console.log(personObj,copiedPerson);
+

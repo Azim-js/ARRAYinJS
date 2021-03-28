@@ -266,3 +266,12 @@ const nameFragments=["Mohammed","Azim"];
 const nameString=nameFragments.join(" ");
 console.log(nameString);
 
+// use of SPREAD OPERATOR(...) for arrays 
+
+const nameFrag=["Mohammed","Azim"];
+
+const copiedFrag=[...nameFrag]; //pulling each individual element and copying it out variable using ... operator 
+
+nameFrag.unshift("Mr");
+
+console.log(nameFrag,copiedFrag);

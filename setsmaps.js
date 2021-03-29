@@ -46,3 +46,18 @@ console.log(personData.get(person1)); //to access the elements in maps keys-> va
 personData.set(person2,[{date:"to weeks ago",price:100}]);
 
 console.log(personData);
+
+
+
+// .entries() for MAPs
+
+for(const entry of personData.entries()){
+    console.log(entry);
+   
+}
+
+// how to use destrucotrs for Maps for accesiing key and values
+
+for(const [key,value] of personData.entries()){
+    console.log(key,value);
+}

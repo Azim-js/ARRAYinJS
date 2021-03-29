@@ -77,3 +77,17 @@ for(const value of personData.values()){
 // size,clear,entries,set
 
 console.log(personData.size);
+
+// WeakSet() used for garbage colletion as for archiving
+
+let person={name:"Azim"};
+const persons=new WeakSet();
+
+// .add() .clear as objects used is set ->weak set()
+
+persons.add(person);
+
+person=null; // checking if freed or not
+
+console.log(persons); //still stays as it is used for garbage collection
+

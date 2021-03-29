@@ -39,3 +39,10 @@ const person2={name:"Ummar"};
 const personData = new Map([[person1,[{date:'yesterday',price:10}]]]);
 
 console.log(personData);
+
+
+console.log(personData.get(person1)); //to access the elements in maps keys-> value
+
+personData.set(person2,[{date:"to weeks ago",price:100}]);
+
+console.log(personData);

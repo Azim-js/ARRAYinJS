@@ -12,7 +12,7 @@ console.log(ids.has(1)); //for checking
 
 const ids1= new Set(["HI","From","HEllo"]);
 
-ids1.add(2)
+ids1.add(2);
 
 console.log(ids1);
 

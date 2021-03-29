@@ -61,3 +61,19 @@ for(const entry of personData.entries()){
 for(const [key,value] of personData.entries()){
     console.log(key,value);
 }
+
+// keys()
+
+for(const key of personData.keys()){
+    console.log(key);
+}
+
+// values()
+
+for(const value of personData.values()){
+    console.log(value);
+}
+
+// size,clear,entries,set
+
+console.log(personData.size);

@@ -28,3 +28,14 @@ if(ids1.has("HI")){
     ids1.delete("HI");
 }
 console.log(ids1);
+
+
+
+// MAPS()
+
+const person1={name:'Azim'};
+const person2={name:"Ummar"};
+
+const personData = new Map([[person1,[{date:'yesterday',price:10}]]]);
+
+console.log(personData);

@@ -87,7 +87,17 @@ const persons=new WeakSet();
 
 persons.add(person);
 
-person=null; // checking if freed or not
+// person=null; // checking if freed or not
 
 console.log(persons); //still stays as it is used for garbage collection
+
+
+// WEAkMAPS() for garbage collection
+
+const personsData= new WeakMap();
+personsData.set(person,"is very cool");
+
+person=null;
+
+console.log(personsData); 
 
